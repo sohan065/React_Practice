@@ -8,10 +8,6 @@ const bookList = [
 ];
 export default function Reduser() {
     const [bookName, setBookName] = useState('');
-    // const [isModalOpen, setModalOpen] = useState(false);
-    // const [modalText, setModalText] = useState('');
-    // const [books, setBooks] = useState(bookList);
-
     const reducer = (state, action) => {
         if (action.type === 'ADD') {
             const allBoooks = [...state.books, action.payload];
@@ -23,11 +19,12 @@ export default function Reduser() {
             };
         }
         if (action.type === 'REMOVE') {
-            console.log(action.payload);
-            const filterBoooks = [...state.books].filter((book) => book.id !== action.payload);
+            const filteredBooks = [...state.books].filter((book) => {
+                return book.id !== action.payload.id;
+            });
             return {
                 ...state,
-                books: filterBoooks,
+                books: filteredBooks,
                 isModalOpen: true,
                 modalText: 'book removed'
             };
