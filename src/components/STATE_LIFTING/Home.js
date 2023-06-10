@@ -4,6 +4,7 @@ import NewTodo from './NewTodo';
 import UseEffect from '../UseEffect/UseEffect';
 import Data from '../UseFetch/Data';
 import Reduser from '../UseReduser/Reduser';
+import Router from '../Router/Router';
 
 export default function Home() {
     const dummyTodos = ['todo1', 'todo2', 'todo3'];
@@ -17,7 +18,8 @@ export default function Home() {
             <Todos todos={todos} /> */}
             {/* <UseEffect /> */}
             {/* <Data /> */}
-            <Reduser />
+            {/* <Reduser /> */}
+            <Router />
         </div>
     );
 }

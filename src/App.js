@@ -9,15 +9,15 @@ import Home from './components/STATE_LIFTING/Home';
 const App = () => {
     return (
         <div>
-            <header>
+            {/* <header>
                 <h1>A template for React Project</h1>
-            </header>
+            </header> */}
             <main>
                 {/* <Change /> */}
                 <Home />
                 {/* <Counter /> */}
             </main>
-            <footer>
+            {/* <footer>
                 <p className="left">
                     Subscribe to my{' '}
                     <a href="https://www.youtube.com/c/anisulislamrubel">
@@ -26,7 +26,7 @@ const App = () => {
                     channel
                 </p>
                 <p className="right">Developed with &hearts; by Sohanur Rahman</p>
-            </footer>
+            </footer> */}
         </div>
     );
 };
