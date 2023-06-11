@@ -20,7 +20,9 @@ export default function Blogs() {
                         <article key={blog.id}>
                             <h3>{title}</h3>
                             <p>{trunCate(body, 100)}</p>
-                            <Link to={title}>Learn More</Link>
+                            <Link to={title} state={{ title, body }}>
+                                Learn More
+                            </Link>
                         </article>
                     );
                 })}

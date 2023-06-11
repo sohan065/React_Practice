@@ -7,6 +7,7 @@ import Error from '../../pages/Error';
 import Navbar from '../Navbar/Navbar';
 import Blogs from '../../pages/Blogs';
 import Blog from '../../pages/Blog';
+import User from '../../pages/User';
 
 export default function Router() {
     return (
@@ -18,6 +19,7 @@ export default function Router() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blogs" element={<Blogs />} />
                 <Route path="/blogs/:title" element={<Blog />} />
+                <Route path="/user" element={<User />} />
                 <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
