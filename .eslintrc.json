@@ -15,7 +15,7 @@
         "no-empty": "error",
         "default-case": "error",
         "eqeqeq": "error",
-        "max-lines": ["error", 500],
-        "max-depth": ["error", 300]
+        "max-lines": ["error", 200],
+        "max-depth": ["error", 3]
     }
 }
