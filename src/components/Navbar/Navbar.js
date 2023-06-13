@@ -17,6 +17,9 @@ export default function Navbar() {
             <Link to="/blogs" className={style['nav-link']}>
                 Blog
             </Link>
+            <Link to="/chat" className={style['nav-link']}>
+                Chat
+            </Link>
         </nav>
     );
 }
