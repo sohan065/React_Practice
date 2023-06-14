@@ -21,5 +21,5 @@
 <!-- npm i yup -->
 <!-- npm i react-router-dom -->
 <!-- npm i json-server -->
-<!-- npm json-server -p 3001 -w databse/db.json-->
+<!-- npx json-server -p 3001 -w database/db.json-->
 <!-- npm i axios -->
