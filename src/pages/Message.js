@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-export default function Message() {
+export default memo(function Message({ numberOfMesage, onIcrement }) {
     console.log('message render');
-    return <div>Message</div>;
-}
+    return (
+        <div>
+            <p>send {numberOfMesage} message</p>
+            <button onClick={onIcrement}>Increment Message Number</button>
+        </div>
+    );
+});
